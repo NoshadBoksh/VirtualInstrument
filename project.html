@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="project.css">
+    <title>Web Audio API Piano and Drums</title>
+</head>
+
+<body>
+    <!-- Wrapping piano in Div for styling -->
+    <h1>Piano</h1>
+    <div class="piano">
+        <div id="c" onclick="playSound('c')"></div>
+        <div id="cSHARP" onclick="playSound('cSHARP')"></div>
+        <div id="d" onclick="playSound('d')"></div>
+        <div id="dSHARP" onclick="playSound('dSHARP')"></div>
+        <div id="e" onclick="playSound('e')"></div>
+        <div id="f" onclick="playSound('f')"></div>
+        <div id="fSHARP" onclick="playSound('fSHARP')"></div>
+        <div id="g" onclick="playSound('g')"></div>
+        <div id="gSHARP" onclick="playSound('gSHARP')"></div>
+        <div id="a" onclick="playSound('a')"></div>
+        <div id="aSHARP" onclick="playSound('aSHARP')"></div>
+        <div id="b" onclick="playSound('b')"></div>
+        <div id = Line></div>
+        <div id="cR" ></div>
+        <div id="cRSHARP" ></div>
+        <div id="dR" ></div>
+        <div id="dRSHARP" ></div>
+        <div id="eR" ></div>
+        <div id="fR" ></div>
+        <div id="fRSHARP" ></div>
+        <div id="gR" ></div>
+        <div id="gRSHARP" ></div>
+        <div id="aR" ></div>
+        <div id="aRSHARP" ></div>
+        <div id="bR" ></div>
+    </div>
+
+
+
+</body>
+
+</html>
+
+
+
+
+<!-- Attach recorder js for recording -->
+<script src="recorder.js"></script>
+<input type="button" value="record" id="Start">
+<input type="button" value="stop" id="Stop">
+<audio controls></audio>
+<script src="recorder.js"></script>
+<script src='project.js'></script>
+
+<!-- create svgs for drums -->
+<h2>Drums</h2>
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <circle id="kick" cx="50" cy="100" r="40" fill="#F44336" />
+    <circle id="snare" cx="120" cy="100" r="40" fill="#FFC107" />
+    <circle id="highTom1" cx="70" cy="60" r="25" fill="#2196F3" />
+    <circle id="highTom2" cx="100" cy="60" r="25" fill="#2196F3" />
+    <circle id="lowTom" cx="85" cy="120" r="30" fill="#4CAF50" />
+    <circle id="cymbal1" cx="50" cy="165" r="25" fill="#9C27B0" />
+    <circle id="cymbal2" cx="120" cy="165" r="25" fill="#9C27B0" />
+</svg>
